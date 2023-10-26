@@ -1,24 +1,12 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ include file="common/header.jspf"%>
+<%@ include file="common/navigation.jspf"%>
+<div class="container">
 
-<html>
-<head>
-<title>Gestión de Tareas</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<style>
-
-.footer {
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: black;
-color: white;
-height: 100px;
-text-align: center;
-}
-
-</style>
-</head>
-<body>
+ <div class="panel panel-primary">
+     <div class="panel-heading">Página principal</div>
+        <div class="panel-body">
+           Bienvenido ${name}! <a href="/list-todos">Pulsa aquí</a> para gestionar tus tareas.
+        </div>
+     </div>
+ </div>
+<%@ include file="common/footer.jspf"%>
